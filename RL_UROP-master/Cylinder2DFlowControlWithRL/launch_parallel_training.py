@@ -48,7 +48,7 @@ if __name__ == '__main__':
     config["gradient_steps"] = 22
 
     config["target_policy_noise"] = 0.1
-    config["policy_delay"]=4
+    config["policy_delay"]=2
     config["buffer_size"] = int(10e5)
     config["optimize_memory_usage"] = False
 
