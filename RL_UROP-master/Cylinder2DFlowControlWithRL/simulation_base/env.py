@@ -27,7 +27,7 @@ def resume_env(plot=False,  # To plot results (Field, controls, lift, drag, rec 
                dump_debug=500,  # If not False, output step info of ep,step,rec_area,L,D,jets Q* to saved_models/debug.csv, every 'dump_debug' steps
                dump_CL=500,  # If not False, output step info of ep,step,rec_area,L,D,jets Q* to command line, every 'dump_CL' steps
                remesh=False,
-               random_start=False,
+               random_start=True,
                single_run=False,
                horizon=nb_actuations,
                n_env=1):
@@ -99,7 +99,7 @@ def resume_env(plot=False,  # To plot results (Field, controls, lift, drag, rec 
                                "max_value_jet_MFR": 0.1,
                                "smooth_control": 0.1,  # parameter alpha to smooth out control
                                "zero_net_Qs": True,  # True for Q1 + Q2 = 0
-                               "random_start": random_start}
+                               "random_start": True}
 
         inspection_params = {"plot": False,
                              "dump_vtu": False,
