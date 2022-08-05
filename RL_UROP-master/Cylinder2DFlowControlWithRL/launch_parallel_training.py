@@ -11,7 +11,7 @@ from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv, VecNorm
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.logger import Logger, HumanOutputFormat, DEBUG
 from stable_baselines3.sac import SAC
-from stable_baselines3 import TD3
+from stable_baselines3.td3 import TD3
 import torch
 from gym.wrappers.time_limit import TimeLimit
 from stable_baselines3.common.callbacks import CheckpointCallback
