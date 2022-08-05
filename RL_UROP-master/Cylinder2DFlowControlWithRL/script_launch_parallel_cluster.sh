@@ -1,6 +1,6 @@
 #!/bin/bash
 #PBS -l walltime=72:00:00
-#PBS -l select=1:ncpus=48:mem=100gb
+#PBS -l select=1:ncpus=72:mem=100gb
 
 # Cluster Environment Setup
 cd $PBS_O_WORKDIR
@@ -12,7 +12,7 @@ source activate fenicsproject
 # TODO
 
 
-NUM_PORT=48
+NUM_PORT=62
 # check that all ports are free
 #output=$(python3 -c "from utils import bash_check_avail; bash_check_avail($NUM_PORT)")
 
