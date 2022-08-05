@@ -45,7 +45,7 @@ if __name__ == '__main__':
     config["gamma"] = 0.99
     config["train_freq"] = 1
     #config["target_update_interval"] = 1
-    config["gradient_steps"] = 32
+    config["gradient_steps"] = 20
 
     config["target_policy_noise"] = 0.1
     config["policy_delay"]=4
